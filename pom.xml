@@ -3,7 +3,7 @@
     <groupId>com.github.scribejava</groupId>
     <artifactId>scribejava</artifactId>
     <packaging>pom</packaging>
-    <version>5.3.0</version>
+    <version>5.3.0-hiorg</version>
     <name>ScribeJava OAuth Library</name>
     <description>The best OAuth library out there</description>
     <url>https://github.com/scribejava/scribejava</url>
@@ -219,7 +219,7 @@
                         <configuration>
                             <rules>
                                 <requireJavaVersion>
-                                    <version>(,1.8)</version>
+                                    <version>(,1.9)</version>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>
