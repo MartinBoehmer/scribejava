@@ -1,8 +1,7 @@
 package com.github.scribejava.apis;
 
+import com.github.scribejava.core.builder.api.ClientAuthenticationType;
 import com.github.scribejava.core.builder.api.DefaultApi20;
-import com.github.scribejava.core.oauth2.clientauthentication.ClientAuthentication;
-import com.github.scribejava.core.oauth2.clientauthentication.RequestBodyAuthenticationScheme;
 
 /**
  * OAuth2 API for HiOrg-Server
@@ -45,8 +44,8 @@ public class HiOrgServerApi20 extends DefaultApi20 {
     }
 
     @Override
-    public ClientAuthentication getClientAuthentication() {
-        return RequestBodyAuthenticationScheme.instance();
+    public ClientAuthenticationType getClientAuthenticationType() {
+        return ClientAuthenticationType.REQUEST_BODY;
     }
 
 }
